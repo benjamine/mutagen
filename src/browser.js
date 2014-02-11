@@ -1,7 +1,8 @@
 
 var experiments = require("../experiments/index");
 
-var log = (typeof console !== "undefined" && typeof console.log === "function") ? console.log : function(){};
+var log = (typeof console !== "undefined" && typeof console.log === "function") ? 
+	function() { return console.log.apply(console, arguments); }: function(){};
 
 var browserSupported = typeof document !== "undefined" && 
 	document.querySelectorAll && Array.prototype.forEach;
