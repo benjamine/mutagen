@@ -15,7 +15,7 @@ w("cxApi.setCookieExpirationSeconds",B.ba,void 0);B.Y=function(a){H("string"==ty
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 exports.id="miNMMrnWT1mADbOkEYl6vw",exports.gacx=!0,exports.variations={1:function(){document.body.style.background="red"},2:function(){document.body.style.background="green"},3:function(){document.body.style.background="blue"}};
 },{}],2:[function(require,module,exports){
-exports.id="axy-VOivRJeww_KPbBnPBA",exports.gacx=!0,exports.variations={1:function(){document.body.style.fontSize="small"},2:function(){document.body.style.fontSize="large"},3:function(){document.body.style.fontSize="x-large"}};
+exports.id="axy-VOivRJeww_KPbBnPBA",exports.gacx=!0,exports.variations={1:function(){document.querySelector("img.signup-argument").setAttribute("src","http://www.copyblogger.com/images/blog_logo_beta.gif")},2:function(){document.querySelector("img.signup-argument").setAttribute("src","http://jasonlefkowitz.net/wp-content/uploads/2013/07/Cats.jpg")},3:function(){document.querySelector("img.signup-argument").setAttribute("src","http://www.rightround.org/media/images/mic_monster_138_060515.jpg")}};
 },{}],3:[function(require,module,exports){
 exports.example1=require("./example1"),exports.example2=require("./example2");
 },{"./example1":1,"./example2":2}],4:[function(require,module,exports){
