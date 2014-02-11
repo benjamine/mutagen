@@ -1,0 +1,20 @@
+{
+  "author": "Benjamin Eidelman <beneidel@gmail.com> (http://twitter.com/beneidel)",
+  "name": "mutagen",
+  "version": "0.0.0",
+  "homepage": "https://github.com/benjamine/mutagen",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benjamine/mutagen.git"
+  },
+  "dependencies": {
+    "browserify": "~3.28.1",
+    "superagent": "~0.16.0",
+    "uglifyify": "~1.2.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
