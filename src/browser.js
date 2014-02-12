@@ -1,5 +1,5 @@
 
-var experiments = require("../experiments/index");
+var experiments = require("../experiments/__index");
 
 var log = (typeof console !== "undefined" && typeof console.log === "function") ? 
 	function() { return console.log.apply(console, arguments); }: function(){};
@@ -14,10 +14,10 @@ if (!browserSupported)
 		var experiment = experiments[name];
 		var variation = 0;
 		try {
-			if (experiment.gacx) {
-				variation = cxApi.chooseVariation(experiment.id);
-			} else if (typeof experiment.chooseVariation === "function") {
+			if (typeof experiment.chooseVariation === "function") {
 				variation = experiment.chooseVariation();
+			} else if (experiment.gacx) {
+				variation = cxApi.chooseVariation(experiment.id);
 			}
 		} catch (err) {
 			log("[Mutagen] error choosing variation, experiment: " + name);
