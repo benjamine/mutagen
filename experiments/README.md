@@ -54,7 +54,7 @@ While writing variations please consider:
 
 - this will load very early on the page, so no js frameworks will be available, as in the example you can use a variations/ lib to perform most common DOM manipulations useful for variations. check out: http://youmightnotneedjquery.com/
 - to avoid overcomplicate experiments, old browsers are excluded from running experiments. Check ```/src/browser.js```, requiring ```Array.prototype.forEach``` means IE9+.
-- size is very important here, so if your variation needs lot of code, instead of putting that in the experiment files, do it by injecting <script> or <style> tags to the page with relevant js or css.
+- size is very important here, so if your variation needs lot of code, instead of putting that in the experiment files, do it by injecting ```<script>``` or ```<style>``` tags to the page with relevant js or css.
 - variation ```0``` is reserved for the original state, don't use it unless you want code to be executed when the experiment is inactive or the original variation was chosen (use 1, 2, 3...)
 
 #### Custom variation choosing
@@ -141,4 +141,3 @@ cxApi.getChosenVariation(experimentId); // returns the variation number
 ```
 
 More details on using cxApi can be found at: https://developers.google.com/analytics/devguides/collection/gajs/experiments#cxjs-methods
-
